@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gideão Levi de Oliveira Frota - Desenvolvedor Front-End</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      width: 100%;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .foto-row {
+      display: flex;
+      justify-content: center;
+    }
+
+    .foto {
+      flex: 0 0 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .foto img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .resumo-atividades {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 50%;
+    }
+
+    section {
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .perfil-resumo-row {
+      display: flex;
+      gap: 20px;
+    }
+
+    .resumo {
+      height: 30%;
+    }
+
+    .perfil, .resumo {     
+      flex: 1;
+    }
+
+    .perfil {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 40%;
+    }
+
+    section h2 {
+      color: #34495e;
+      font-size: 1.8em;
+    }
+
+    section h3 {
+      color: #16a085;
+    }
+
+    section h4 {
+      color: #34495e;
+      font-size: 1.2em;
+      font-weight: normal;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      width: 100%;
+    }
+
+    footer a {
+      color: #1abc9c;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    p, ul {
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .perfil-resumo-row {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gideão Levi de Oliveira Frota</h1>
+  </header>
+
+  <main>
+    <!-- Linha exclusiva para a foto -->
+    <div class="foto-row">
+      <div class="foto">
+        <img src="1701872417783.jpg" alt="Foto de Gideão Levi">
+      </div>
+    </div>
+
+    <!-- Linha para Perfil e Resumo -->
+    <div class="perfil-resumo-row">
+      <section class="perfil">
+        <h2>Perfil Profissional</h2>
+        <p>Desenvolvedor Front-End com experiência em:</p>
+        <ul>
+          <li>VTEX</li>
+          <li>React</li>
+          <li>Google Analytics</li>
+          <li>Google Tag Manager</li>
+          <li>Scrum</li>
+          <li>Kanban</li>
+          <li>Vue.js</li>
+          <li>Firebase</li>
+          <li>Go</li>
+          <li>Gitlab</li>
+          <li>Github</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>jQuery</li>
+          <li>Handlebars</li>
+        </ul>
+      </section>
+      <div class="resumo-atividades">
+        <section class="resumo">
+        <h2>Resumo de Qualificações</h2>
+        <p>
+          Iniciei no mundo do Front-End em 2021, trabalhando com VTEX, React, Google Analytics e Google Tag Manager. 
+          Foi lá que aprendi a trabalhar com Scrum e Kanban. Em 2022, comecei a estudar Vue.js em um novo emprego,  
+          aprofundando-me no framework juntamente com Firebase e Go.  
+          Atualmente, o Vue.js é minha principal tecnologia, mas estou sempre em busca de aprender algo novo.
+        </p>
+      </section>
+
+      <section>
+        <h2>Atividades de Aperfeiçoamento</h2>
+        <ul>
+          <li>Ministração de minicurso de introdução ao Vue.js na III Semana da Engenharia de Computação de Sobral.</li>
+          <li>Conhecimentos em SEO (Search Engine Optimization).</li>
+          <li>Conhecimentos em UX/UI Design.</li>
+          <li>Conhecimentos em Bancos de Dados: Postgres e Firebase.</li>
+          <li>Treinamentos em Python e VTEX.</li>
+        </ul>
+      </section>
+      </div>
+      
+    </div>
+    
+    <section>
+      <h2>Experiência Profissional</h2>
+      <article>
+        <h3>STILINGUE / BLIP</h3>
+        <h4>Estagiário Front-End (07/2022 - 07/2024)</h4>
+        <ul>
+          <li>Criação de componentes na plataforma Studio utilizando Vue, Vuex, Vuetify, Firebase e Golang.</li>
+          <li>Integração do Studio com a API da Blip para proporcionar novos insights e relatórios sobre os chatbots dos clientes.</li>
+          <li>Desenvolvimento e ajuste de testes unitários com Jest para melhoria da performance e identificação de erros.</li>
+          <li>Correção de bugs e manutenção da plataforma utilizando Gitlab e, posteriormente, Github.</li>
+          <li>Manutenção na plataforma Blip com React, AngularJS e .NET.</li>
+        </ul>
+        <h4>Software Engineer | Analista Jr. Front-End (07/2024 - Atualmente)</h4>
+        <ul>
+          <li>Manutenção e evolução de um sistema legado utilizando HTML, CSS, JavaScript, Vue, jQuery e Handlebars.</li>
+          <li>Remoção de mais de 10 feature flags obsoletas, contribuindo para uma base de código mais limpa e de fácil manutenção.</li>
+          <li>Refatoração de componentes legados para Vue.js, com correções de vazamentos e melhorias de performance.</li>
+          <li>Migração de rotas de Python 2 para Python 3, garantindo compatibilidade e continuidade da plataforma.</li>
+          <li>Utilização do GCP para promoção de versões em ambientes de produção.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>ENEXT</h3>
+        <h4>Estagiário Front-End (10/2021 - 07/2022)</h4>
+        <ul>
+          <li>Criação e manutenção de sites E-commerce para clientes como Avon, Malwee e Mayana Beauty utilizando VTEX, React, SASS e PHP.</li>
+          <li>Atualização de campanhas dos clientes e realização de deploys em produção.</li>
+        </ul>
+      </article>
+    </section>
+
+    
+  </main>
+
+  <footer>
+    <p>Contato: <a href="mailto:levi.frota.09@hotmail.com">levi.frota.09@hotmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/levifrota27/">levifrota27</a></p>
+  </footer>
+</body>
+</html>
