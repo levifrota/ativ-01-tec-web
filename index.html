@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Adicionado -->
   <title>Gideão Levi de Oliveira Frota - Desenvolvedor Front-End</title>
   <style>
     body {
@@ -136,6 +137,15 @@
     @media (max-width: 768px) {
       .perfil-resumo-row {
         flex-direction: column;
+        align-items: center;
+      }
+
+      .perfil, .resumo-atividades, section {
+        width: 90%;
+      }
+
+      header, footer {
+        width: auto;
       }
     }
   </style>
@@ -146,14 +156,12 @@
   </header>
 
   <main>
-    <!-- Linha exclusiva para a foto -->
     <div class="foto-row">
       <div class="foto">
-        <img src="1701872417783.jpg" alt="Foto de Gideão Levi">
+        <img src="1701872417783.jpg" alt="Gideão Levi">
       </div>
     </div>
 
-    <!-- Linha para Perfil e Resumo -->
     <div class="perfil-resumo-row">
       <section class="perfil">
         <h2>Perfil Profissional</h2>
